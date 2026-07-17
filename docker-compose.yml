@@ -3,9 +3,9 @@ services:
     image: postgres:16
     restart: unless-stopped
     environment:
-      - POSTGRES_USER: bookmarks
-      - POSTGRES_PASSWORD: bookmarks
-      - POSTGRES_DB: bookmarks
+      - POSTGRES_USER=bookmarks
+      - POSTGRES_PASSWORD=bookmarks
+      - POSTGRES_DB=bookmarks
     ports:
       - "5433:5432"
     volumes:
