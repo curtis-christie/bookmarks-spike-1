@@ -8,6 +8,6 @@ export async function list(_req: Request, res: Response) {
 
 export async function getById(req: Request, res: Response) {
   const id = req.params.id as string;
-  const bookmark = service.getById(id);
+  const bookmark = await service.getById(id);
   res.json(bookmark);
 }
