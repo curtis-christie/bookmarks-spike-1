@@ -62,3 +62,4 @@ prisma/dev.db-journal
 *.tmp
 *.temp
 .cache/
+requestly/
