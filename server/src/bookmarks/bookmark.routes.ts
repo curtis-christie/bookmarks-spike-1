@@ -5,3 +5,6 @@ export const bookmarksRouter = Router();
 
 bookmarksRouter.get("/", controller.list);
 bookmarksRouter.get("/:id", controller.getById);
+bookmarksRouter.post("/", controller.create);
+bookmarksRouter.patch("/:id", controller.update);
+bookmarksRouter.delete("/:id", controller.remove);
